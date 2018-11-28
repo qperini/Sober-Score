@@ -51,14 +51,14 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-CT-ELf" userLabel="Options">
-                                <rect key="frame" x="10" y="559.5" width="355" height="36"/>
+                                <rect key="frame" x="10" y="559.5" width="355" height="39"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nyi-uB-27D" userLabel="Options">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="39"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyb-TW-CLl" userLabel="History">
-                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="173.5" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                                 <state key="normal" title="History">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -67,8 +67,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVs-w0-QKb" userLabel="Settings">
-                                                <rect key="frame" x="181.5" y="0.0" width="173.5" height="36"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                <rect key="frame" x="181.5" y="0.0" width="173.5" height="39"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
                                                 <state key="normal" title="Settings">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
