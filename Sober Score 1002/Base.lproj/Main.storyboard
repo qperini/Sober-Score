@@ -157,5 +157,42 @@
             </objects>
             <point key="canvasLocation" x="670" y="813"/>
         </scene>
+        <!--Dot Game View Controller-->
+        <scene sceneID="6on-4h-I0A">
+            <objects>
+                <viewController id="65B-PK-r6p" customClass="DotGameViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PyW-dC-Pt8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ook-Le-Kwq">
+                                <rect key="frame" x="108" y="257" width="158" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" backgroundImage="circle-xxl"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGe-OK-dLL">
+                                <rect key="frame" x="125" y="75" width="124" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aeO-HA-GJV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pfQ-27-4eR"/>
+                    <connections>
+                        <outlet property="button" destination="Ook-Le-Kwq" id="RWM-kT-HSN"/>
+                        <outlet property="counterLable" destination="AGe-OK-dLL" id="cBM-ry-Ixw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u1h-yd-0tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560.8" y="812.74362818590714"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="circle-xxl" width="192" height="192"/>
+    </resources>
 </document>

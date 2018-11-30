@@ -15,6 +15,7 @@
 		FA3DC13821ADF5E5002534F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13621ADF5E5002534F6 /* Main.storyboard */; };
 		FA3DC13A21ADF5E8002534F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13921ADF5E8002534F6 /* Assets.xcassets */; };
 		FA3DC13D21ADF5E8002534F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */; };
+		FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FA3DC13921ADF5E8002534F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3DC13C21ADF5E8002534F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3DC13E21ADF5E8002534F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */,
 				FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */,
 				FA030B0321B0C25E007B02D0 /* GameViewControler.swift */,
+				FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */,
 				FA3DC13621ADF5E5002534F6 /* Main.storyboard */,
 				FA3DC13921ADF5E8002534F6 /* Assets.xcassets */,
 				FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */,
 				FA030B0421B0C25E007B02D0 /* GameViewControler.swift in Sources */,
 				FA030B0021B0C234007B02D0 /* HistoryViewControler.swift in Sources */,
+				FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
