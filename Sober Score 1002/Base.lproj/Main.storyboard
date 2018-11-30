@@ -184,27 +184,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpx-kk-VIE">
-                                <rect key="frame" x="20" y="120" width="92" height="30"/>
+                                <rect key="frame" x="20" y="120" width="121" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Reset History"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsb-lu-LV5">
-                                <rect key="frame" x="20" y="173" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsb-lu-LV5">
+                                <rect key="frame" x="20" y="176" width="211" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Take New Baseline Test"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3g-Qk-L0Y">
-                                <rect key="frame" x="20" y="211" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3g-Qk-L0Y">
+                                <rect key="frame" x="20" y="232" width="54" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="About"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.51752735526669325" green="1" blue="0.42624630841806688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Suw-gt-qMD" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="152" id="41C-L2-ka5"/>
+                            <constraint firstItem="t3g-Qk-L0Y" firstAttribute="top" secondItem="Nsb-lu-LV5" secondAttribute="bottom" constant="20" id="AO4-hh-EE2"/>
+                            <constraint firstItem="Nsb-lu-LV5" firstAttribute="top" secondItem="Dpx-kk-VIE" secondAttribute="bottom" constant="20" id="DeP-u9-Hnn"/>
                             <constraint firstItem="oBG-1A-uev" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="20" id="FyM-e4-W4v"/>
                             <constraint firstItem="6vw-0u-D0j" firstAttribute="trailing" secondItem="oBG-1A-uev" secondAttribute="trailing" constant="20" id="JHN-Fx-wih"/>
                             <constraint firstItem="Dpx-kk-VIE" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="20" id="K6r-qd-VGx"/>
+                            <constraint firstItem="t3g-Qk-L0Y" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="20" id="TEs-dW-mgH"/>
                             <constraint firstItem="Dpx-kk-VIE" firstAttribute="top" secondItem="oBG-1A-uev" secondAttribute="bottom" constant="20" id="bqe-8A-hAd"/>
+                            <constraint firstItem="Nsb-lu-LV5" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="20" id="cXo-sy-EnJ"/>
                             <constraint firstItem="6vw-0u-D0j" firstAttribute="trailing" secondItem="Suw-gt-qMD" secondAttribute="trailing" constant="152" id="cya-h2-k5o"/>
                             <constraint firstItem="6vw-0u-D0j" firstAttribute="bottom" secondItem="Suw-gt-qMD" secondAttribute="bottom" constant="40" id="gQl-mX-Oa0"/>
                             <constraint firstItem="oBG-1A-uev" firstAttribute="top" secondItem="6vw-0u-D0j" secondAttribute="top" constant="20" id="zfR-EM-Exc"/>
