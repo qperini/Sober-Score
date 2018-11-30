@@ -15,6 +15,7 @@
 		FA3DC13821ADF5E5002534F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13621ADF5E5002534F6 /* Main.storyboard */; };
 		FA3DC13A21ADF5E8002534F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13921ADF5E8002534F6 /* Assets.xcassets */; };
 		FA3DC13D21ADF5E8002534F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */; };
+		FADD062B21B12A590040C385 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD062A21B12A590040C385 /* ImageSelectViewController.swift */; };
 		FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		FA3DC13921ADF5E8002534F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3DC13C21ADF5E8002534F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3DC13E21ADF5E8002534F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADD062A21B12A590040C385 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */,
 				FA3DC13621ADF5E5002534F6 /* Main.storyboard */,
 				FA3DC13921ADF5E8002534F6 /* Assets.xcassets */,
+				FADD062A21B12A590040C385 /* ImageSelectViewController.swift */,
 				FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */,
 				FA3DC13E21ADF5E8002534F6 /* Info.plist */,
 			);
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADD062B21B12A590040C385 /* ImageSelectViewController.swift in Sources */,
 				FA3DC13521ADF5E5002534F6 /* HomeViewController.swift in Sources */,
 				FA3DC13321ADF5E5002534F6 /* AppDelegate.swift in Sources */,
 				FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */,

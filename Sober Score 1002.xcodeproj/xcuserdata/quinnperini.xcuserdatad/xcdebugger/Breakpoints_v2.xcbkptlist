@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sober Score 1002/SettingsViewControler.swift"
+            timestampString = "565255575.103621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sober Score 1002/GameViewControler.swift"
+            timestampString = "565255575.103747"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "GameViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sober_Score_1002.GameViewController.Next.getter : weak Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Sober Score 1002"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/quinnperini/Desktop/Swift%20Projects/Sober-Score/Sober%20Score%201002/GameViewControler.swift"
+                  timestampString = "565254255.802753"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sober_Score_1002.GameViewController.Next.setter : weak Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Sober Score 1002"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/quinnperini/Desktop/Swift%20Projects/Sober-Score/Sober%20Score%201002/GameViewControler.swift"
+                  timestampString = "565254255.808051"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sober_Score_1002.GameViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Sober_Score_1002.GameViewController"
+                  moduleName = "Sober Score 1002"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/quinnperini/Desktop/Swift%20Projects/Sober-Score/Sober%20Score%201002/GameViewControler.swift"
+                  timestampString = "565254255.824644"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sober_Score_1002.GameViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Sober_Score_1002.GameViewController&gt;"
+                  moduleName = "Sober Score 1002"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/quinnperini/Desktop/Swift%20Projects/Sober-Score/Sober%20Score%201002/GameViewControler.swift"
+                  timestampString = "565254255.828766"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
