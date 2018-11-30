@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var Settings: UIButton!
     
-    @IBOutlet weak var PageControl: UIPageControl!
         
     override func viewDidLoad() {
         super.viewDidLoad()

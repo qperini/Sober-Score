@@ -10,6 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController {
     
+    @IBOutlet weak var HistoryHome: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,4 +19,7 @@ class HistoryViewController: UIViewController {
         print("History Loaded")
     }
     
+    @IBAction func HistoryHome(_ sender: Any) {
+        self.performSegue(withIdentifier: "HistoryHomeArrow", sender: self)
+    }
 }
