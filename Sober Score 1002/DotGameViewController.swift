@@ -56,7 +56,7 @@ class DotGameViewController: UIViewController {
     @IBAction func stop(_ sender: Any) {
         if (scoreInt != 0) && (counter >= 5) {
             scoreTimer.invalidate()
-            
+            self.button.isHidden = true
         }
         if (scoreInt != 0) {
              counter += 1
