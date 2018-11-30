@@ -57,4 +57,5 @@ class GameViewController: UIViewController {
     @IBAction func Next(_ sender: Any) {
         self.performSegue(withIdentifier: "1-2Arrow", sender: self)
     }
+    
 }

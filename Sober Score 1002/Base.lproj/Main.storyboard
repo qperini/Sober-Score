@@ -293,6 +293,9 @@
                                 <rect key="frame" x="165" y="567" width="45" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="➡"/>
+                                <connections>
+                                    <action selector="Next:" destination="2hd-5X-esA" eventType="touchUpInside" id="2X5-VH-a0U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.44219281106954578" blue="0.90433567356193989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -325,12 +328,13 @@
                         <viewLayoutGuide key="safeArea" id="Hnd-Lz-Sld"/>
                     </view>
                     <connections>
+                        <outlet property="Next" destination="IgH-AG-66a" id="h6Q-EQ-tNU"/>
                         <outlet property="word1" destination="rNZ-Tj-fLq" id="ZLE-jH-XGt"/>
                         <outlet property="word2" destination="nyp-GE-V3I" id="8WE-qj-tG3"/>
                         <outlet property="word3" destination="xqW-4D-gur" id="Sxx-5m-7D6"/>
                         <outlet property="word4" destination="Z3H-hK-hGf" id="sq1-TE-kGt"/>
                         <outlet property="word5" destination="aeL-um-cvl" id="KM7-2r-4fr"/>
-                        <segue destination="65B-PK-r6p" kind="showDetail" identifier="1-2Arrow" id="P3y-IM-Km2"/>
+                        <segue destination="65B-PK-r6p" kind="showDetail" identifier="1-2Arrow" id="5ne-s3-AZH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnr-IW-eT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
