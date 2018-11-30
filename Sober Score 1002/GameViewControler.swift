@@ -10,6 +10,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     
+    @IBOutlet weak var NextButton: UIButton!
     @IBOutlet weak var word1: UILabel!
     @IBOutlet weak var word2: UILabel!
     @IBOutlet weak var word3: UILabel!
@@ -33,6 +34,10 @@ class GameViewController: UIViewController {
         word4.text = testwordsArray[3]
         word5.text = testwordsArray[4]
         print("Game Loaded")
+    }
+    
+    @IBAction func NextButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "1to2Arrow", sender: self)
     }
     
 }

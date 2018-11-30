@@ -21,7 +21,7 @@ class DotGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("Game Loaded")
         scoreInt = 0
         counterLabel.text = String(scoreInt)
     }

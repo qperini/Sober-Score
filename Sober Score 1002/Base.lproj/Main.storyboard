@@ -30,12 +30,21 @@
                                     <action selector="SettingsHomeButton:" destination="LcT-Me-XiA" eventType="touchUpInside" id="AAF-1W-qpq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlZ-IJ-OZ3">
+                                <rect key="frame" x="20" y="40" width="335" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.99357243287980712" blue="0.16728763237797428" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="bhA-wP-Chy" firstAttribute="leading" secondItem="vmk-Pn-tYy" secondAttribute="leading" constant="152" id="AkD-Cc-uYJ"/>
+                            <constraint firstItem="HlZ-IJ-OZ3" firstAttribute="top" secondItem="vmk-Pn-tYy" secondAttribute="top" constant="20" id="IbI-X6-zuB"/>
                             <constraint firstItem="vmk-Pn-tYy" firstAttribute="trailing" secondItem="bhA-wP-Chy" secondAttribute="trailing" constant="152" id="JTp-xa-RZi"/>
+                            <constraint firstItem="vmk-Pn-tYy" firstAttribute="trailing" secondItem="HlZ-IJ-OZ3" secondAttribute="trailing" constant="20" id="MZB-rZ-DCa"/>
                             <constraint firstItem="vmk-Pn-tYy" firstAttribute="bottom" secondItem="bhA-wP-Chy" secondAttribute="bottom" constant="40" id="OrZ-y8-7Nr"/>
+                            <constraint firstItem="HlZ-IJ-OZ3" firstAttribute="leading" secondItem="vmk-Pn-tYy" secondAttribute="leading" constant="20" id="PaA-8c-6sg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vmk-Pn-tYy"/>
                     </view>
@@ -168,12 +177,21 @@
                                     <action selector="SettingsHomeButton:" destination="LcT-Me-XiA" eventType="touchUpInside" id="nZm-C2-ThL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBG-1A-uev">
+                                <rect key="frame" x="20" y="40" width="335" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.51752735526669325" green="1" blue="0.42624630841806688" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Suw-gt-qMD" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="152" id="41C-L2-ka5"/>
+                            <constraint firstItem="oBG-1A-uev" firstAttribute="leading" secondItem="6vw-0u-D0j" secondAttribute="leading" constant="20" id="FyM-e4-W4v"/>
+                            <constraint firstItem="6vw-0u-D0j" firstAttribute="trailing" secondItem="oBG-1A-uev" secondAttribute="trailing" constant="20" id="JHN-Fx-wih"/>
                             <constraint firstItem="6vw-0u-D0j" firstAttribute="trailing" secondItem="Suw-gt-qMD" secondAttribute="trailing" constant="152" id="cya-h2-k5o"/>
                             <constraint firstItem="6vw-0u-D0j" firstAttribute="bottom" secondItem="Suw-gt-qMD" secondAttribute="bottom" constant="40" id="gQl-mX-Oa0"/>
+                            <constraint firstItem="oBG-1A-uev" firstAttribute="top" secondItem="6vw-0u-D0j" secondAttribute="top" constant="20" id="zfR-EM-Exc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6vw-0u-D0j"/>
                     </view>
@@ -230,22 +248,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxw-I8-0UX">
+                                <rect key="frame" x="82" y="588" width="211" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Next(TEMPORARY)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextButton:" destination="2hd-5X-esA" eventType="touchUpInside" id="Wsz-Iu-zr3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.44219281106954578" blue="0.90433567356193989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Z3H-hK-hGf" firstAttribute="leading" secondItem="Hnd-Lz-Sld" secondAttribute="leading" constant="60" id="4BL-Gc-Q0x"/>
                             <constraint firstItem="MWt-XL-CgF" firstAttribute="top" secondItem="Hnd-Lz-Sld" secondAttribute="top" constant="40" id="9iA-uV-FOj"/>
+                            <constraint firstItem="Hnd-Lz-Sld" firstAttribute="bottom" secondItem="vxw-I8-0UX" secondAttribute="bottom" constant="40" id="Cyq-XG-Pcr"/>
                             <constraint firstItem="MWt-XL-CgF" firstAttribute="leading" secondItem="Hnd-Lz-Sld" secondAttribute="leading" constant="60" id="FOP-Ym-blH"/>
                             <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="aeL-um-cvl" secondAttribute="trailing" constant="60" id="FUa-Bb-kXs"/>
                             <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="Z3H-hK-hGf" secondAttribute="trailing" constant="60" id="POs-Hl-2Ic"/>
                             <constraint firstItem="rNZ-Tj-fLq" firstAttribute="leading" secondItem="Hnd-Lz-Sld" secondAttribute="leading" constant="60" id="QXA-pd-FFs"/>
                             <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="xqW-4D-gur" secondAttribute="trailing" constant="60" id="RQ9-Lf-jJ2"/>
+                            <constraint firstItem="vxw-I8-0UX" firstAttribute="top" secondItem="Hnd-Lz-Sld" secondAttribute="top" constant="568" id="Tg2-VN-Etp"/>
                             <constraint firstItem="aeL-um-cvl" firstAttribute="top" secondItem="Z3H-hK-hGf" secondAttribute="bottom" constant="30" id="VEx-KB-AN6"/>
                             <constraint firstItem="rNZ-Tj-fLq" firstAttribute="top" secondItem="MWt-XL-CgF" secondAttribute="bottom" constant="150" id="YZF-2U-Fga"/>
                             <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="nyp-GE-V3I" secondAttribute="trailing" constant="60" id="YhX-y3-ICu"/>
                             <constraint firstItem="aeL-um-cvl" firstAttribute="leading" secondItem="Hnd-Lz-Sld" secondAttribute="leading" constant="60" id="axi-5L-7px"/>
                             <constraint firstItem="nyp-GE-V3I" firstAttribute="top" secondItem="rNZ-Tj-fLq" secondAttribute="bottom" constant="30" id="dkL-B6-xik"/>
                             <constraint firstItem="xqW-4D-gur" firstAttribute="leading" secondItem="Hnd-Lz-Sld" secondAttribute="leading" constant="60" id="k7v-WG-CvH"/>
+                            <constraint firstItem="vxw-I8-0UX" firstAttribute="leading" secondItem="Hnd-Lz-Sld" secondAttribute="leading" constant="82" id="sNu-18-b4o"/>
+                            <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="vxw-I8-0UX" secondAttribute="trailing" constant="82" id="u5M-ET-rl4"/>
                             <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="rNZ-Tj-fLq" secondAttribute="trailing" constant="60" id="vEs-QZ-cMy"/>
                             <constraint firstItem="Hnd-Lz-Sld" firstAttribute="trailing" secondItem="MWt-XL-CgF" secondAttribute="trailing" constant="60" id="w40-1T-Eeh"/>
                             <constraint firstItem="xqW-4D-gur" firstAttribute="top" secondItem="nyp-GE-V3I" secondAttribute="bottom" constant="30" id="xIN-Mm-66l"/>
@@ -255,11 +287,13 @@
                         <viewLayoutGuide key="safeArea" id="Hnd-Lz-Sld"/>
                     </view>
                     <connections>
+                        <outlet property="NextButton" destination="vxw-I8-0UX" id="Z5i-Kn-yWb"/>
                         <outlet property="word1" destination="rNZ-Tj-fLq" id="ZLE-jH-XGt"/>
                         <outlet property="word2" destination="nyp-GE-V3I" id="8WE-qj-tG3"/>
                         <outlet property="word3" destination="xqW-4D-gur" id="Sxx-5m-7D6"/>
                         <outlet property="word4" destination="Z3H-hK-hGf" id="sq1-TE-kGt"/>
                         <outlet property="word5" destination="aeL-um-cvl" id="KM7-2r-4fr"/>
+                        <segue destination="65B-PK-r6p" kind="showDetail" identifier="1to2Arrow" id="Qtr-eA-aRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnr-IW-eT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
