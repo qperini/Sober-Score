@@ -392,7 +392,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-nw-rjm">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="NUu-Px-zcu"/>
                                     <constraint firstAttribute="width" constant="300" id="r8E-ix-m0q"/>
@@ -408,7 +408,8 @@
                     </view>
                     <connections>
                         <outlet property="SingleImage" destination="Lge-nw-rjm" id="zV7-Rz-eg0"/>
-                        <segue destination="eMi-JR-07F" kind="presentation" identifier="ImageTransfer" id="4RZ-t3-ohh"/>
+                        <segue destination="MkK-da-sHP" kind="presentation" identifier="ImageTransfer" id="3C9-fU-BRO"/>
+                        <segue destination="MkK-da-sHP" kind="showDetail" identifier="ImageToImages" id="kAg-j1-Wot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1Q-de-Mb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -416,95 +417,107 @@
             <point key="canvasLocation" x="2692" y="813"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="w97-fx-oHq">
+        <scene sceneID="2o7-gS-qEv">
             <objects>
-                <viewController id="MkK-da-sHP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ugB-r2-bv8">
+                <viewController id="Bbf-xk-ums" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bGZ-yP-Rii">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="juQ-Vh-CMD"/>
+                        <viewLayoutGuide key="safeArea" id="mae-u1-oal"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BBk-xW-r9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WN5-ab-NAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457" y="813"/>
+            <point key="canvasLocation" x="3482" y="813"/>
         </scene>
-        <!--Choose Image-->
-        <scene sceneID="F1K-ed-tmp">
+        <!--Select Image View Controller-->
+        <scene sceneID="w97-fx-oHq">
             <objects>
-                <viewController id="eMi-JR-07F" userLabel="Choose Image" customClass="ImageSelectViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xRS-vR-A74">
+                <viewController id="MkK-da-sHP" customClass="SelectImageViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugB-r2-bv8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DfP-vj-dU2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which of These Images Appeared Before?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2O-ig-MPE">
+                                <rect key="frame" x="0.0" y="100" width="375" height="69.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="htr-DO-ed9">
                                 <rect key="frame" x="30" y="417" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="2fz-7o-hWs"/>
-                                    <constraint firstAttribute="height" constant="150" id="Cza-ir-fjs"/>
+                                    <constraint firstAttribute="height" constant="150" id="jTr-lL-2rc"/>
+                                    <constraint firstAttribute="width" constant="150" id="pM5-Ak-ZtU"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U64-al-TXN">
-                                <rect key="frame" x="30" y="252" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Nkh-4E-vJv"/>
-                                    <constraint firstAttribute="height" constant="150" id="QI6-de-8Fw"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="hh7-hv-6uD"/>
-                                    <constraint firstAttribute="width" constant="150" id="q6r-w7-vHI"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P0u-U1-aaZ">
+                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wq5-N1-DCR">
                                 <rect key="frame" x="195" y="417" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="R99-iq-i00"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ndo-FH-Yvy"/>
-                                    <constraint firstAttribute="width" constant="150" id="tky-Wk-kuS"/>
-                                    <constraint firstAttribute="height" constant="150" id="vbH-QS-BMa"/>
+                                    <constraint firstAttribute="width" constant="150" id="9D6-Fo-7p0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="I3x-W2-zFf"/>
+                                    <constraint firstAttribute="height" constant="150" id="Sj4-i7-FMq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="vEf-Uv-chv"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ev-EI-Fwn">
+                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ipr-Lg-yCe">
+                                <rect key="frame" x="30" y="252" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="cSe-jx-eaU"/>
+                                    <constraint firstAttribute="height" constant="150" id="oSv-cq-Xd3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-cQ-gY0">
                                 <rect key="frame" x="195" y="252" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="7Te-Sh-Ss9"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="AKC-Dn-xdb"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="E85-7b-3td"/>
-                                    <constraint firstAttribute="width" constant="150" id="FOM-sP-8b9"/>
-                                    <constraint firstAttribute="height" constant="150" id="Zbq-oU-n9h"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="x9Z-ec-tYM"/>
+                                    <constraint firstAttribute="height" constant="150" id="HR5-jL-IUT"/>
+                                    <constraint firstAttribute="width" constant="150" id="JSp-gt-GQ3"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jTY-pV-geO" firstAttribute="bottom" secondItem="DfP-vj-dU2" secondAttribute="bottom" constant="100" id="4H7-Wv-9Zy"/>
-                            <constraint firstItem="jTY-pV-geO" firstAttribute="trailing" secondItem="P0u-U1-aaZ" secondAttribute="trailing" constant="30" id="Leu-Ww-pwo"/>
-                            <constraint firstItem="jTY-pV-geO" firstAttribute="bottom" secondItem="P0u-U1-aaZ" secondAttribute="bottom" constant="100" id="LoP-WB-CYC"/>
-                            <constraint firstItem="U64-al-TXN" firstAttribute="leading" secondItem="jTY-pV-geO" secondAttribute="leading" constant="30" id="Mry-eI-bb5"/>
-                            <constraint firstItem="DfP-vj-dU2" firstAttribute="top" secondItem="U64-al-TXN" secondAttribute="bottom" constant="15" id="Sox-CB-3lv"/>
-                            <constraint firstItem="P0u-U1-aaZ" firstAttribute="top" secondItem="0Ev-EI-Fwn" secondAttribute="bottom" constant="15" id="Uli-oz-1Je"/>
-                            <constraint firstItem="DfP-vj-dU2" firstAttribute="leading" secondItem="jTY-pV-geO" secondAttribute="leading" constant="30" id="Uvx-s7-kdD"/>
-                            <constraint firstItem="jTY-pV-geO" firstAttribute="trailing" secondItem="0Ev-EI-Fwn" secondAttribute="trailing" constant="30" id="W86-6L-eAG"/>
-                            <constraint firstItem="0Ev-EI-Fwn" firstAttribute="leading" secondItem="U64-al-TXN" secondAttribute="trailing" constant="15" id="fF9-Ps-4PG"/>
+                            <constraint firstItem="htr-DO-ed9" firstAttribute="top" secondItem="Ipr-Lg-yCe" secondAttribute="bottom" constant="15" id="0oe-wZ-50L"/>
+                            <constraint firstItem="htr-DO-ed9" firstAttribute="leading" secondItem="juQ-Vh-CMD" secondAttribute="leading" constant="30" id="1jz-Ow-8Kk"/>
+                            <constraint firstItem="kkh-cQ-gY0" firstAttribute="leading" secondItem="Ipr-Lg-yCe" secondAttribute="trailing" constant="15" id="23T-aY-mcP"/>
+                            <constraint firstItem="kkh-cQ-gY0" firstAttribute="leading" secondItem="Ipr-Lg-yCe" secondAttribute="trailing" constant="15" id="2Cv-Nf-e2A"/>
+                            <constraint firstItem="juQ-Vh-CMD" firstAttribute="bottom" secondItem="wq5-N1-DCR" secondAttribute="bottom" constant="100" id="FN9-1x-bpT"/>
+                            <constraint firstItem="Ipr-Lg-yCe" firstAttribute="leading" secondItem="juQ-Vh-CMD" secondAttribute="leading" constant="30" id="JtM-Op-UAj"/>
+                            <constraint firstItem="wq5-N1-DCR" firstAttribute="leading" secondItem="htr-DO-ed9" secondAttribute="trailing" constant="15" id="RGI-6F-WvE"/>
+                            <constraint firstItem="wq5-N1-DCR" firstAttribute="leading" secondItem="htr-DO-ed9" secondAttribute="trailing" constant="15" id="SYf-Zt-PX1"/>
+                            <constraint firstItem="e2O-ig-MPE" firstAttribute="leading" secondItem="juQ-Vh-CMD" secondAttribute="leading" id="Sbs-Ai-nFl"/>
+                            <constraint firstItem="wq5-N1-DCR" firstAttribute="top" secondItem="kkh-cQ-gY0" secondAttribute="bottom" constant="15" id="ZRg-XR-TtH"/>
+                            <constraint firstItem="e2O-ig-MPE" firstAttribute="top" secondItem="juQ-Vh-CMD" secondAttribute="top" constant="80" id="b7x-Qa-1P6"/>
+                            <constraint firstItem="juQ-Vh-CMD" firstAttribute="bottom" secondItem="htr-DO-ed9" secondAttribute="bottom" constant="100" id="c8j-ZU-ejy"/>
+                            <constraint firstItem="htr-DO-ed9" firstAttribute="top" secondItem="kkh-cQ-gY0" secondAttribute="bottom" constant="15" id="cCm-6T-B7T"/>
+                            <constraint firstItem="e2O-ig-MPE" firstAttribute="trailing" secondItem="juQ-Vh-CMD" secondAttribute="trailing" id="fm3-fh-UcB"/>
+                            <constraint firstItem="wq5-N1-DCR" firstAttribute="leading" secondItem="htr-DO-ed9" secondAttribute="trailing" constant="15" id="gMw-5w-VRu"/>
+                            <constraint firstItem="htr-DO-ed9" firstAttribute="top" secondItem="Ipr-Lg-yCe" secondAttribute="bottom" constant="15" id="o2S-DB-nVb"/>
+                            <constraint firstItem="wq5-N1-DCR" firstAttribute="top" secondItem="kkh-cQ-gY0" secondAttribute="bottom" constant="15" id="p5M-Dj-DrO"/>
+                            <constraint firstItem="kkh-cQ-gY0" firstAttribute="leading" secondItem="Ipr-Lg-yCe" secondAttribute="trailing" constant="15" id="vAf-Nv-2LN"/>
+                            <constraint firstItem="juQ-Vh-CMD" firstAttribute="trailing" secondItem="kkh-cQ-gY0" secondAttribute="trailing" constant="30" id="x6s-4T-tvU"/>
+                            <constraint firstItem="juQ-Vh-CMD" firstAttribute="trailing" secondItem="wq5-N1-DCR" secondAttribute="trailing" constant="30" id="xJZ-Bn-I0J"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="jTY-pV-geO"/>
+                        <viewLayoutGuide key="safeArea" id="juQ-Vh-CMD"/>
                     </view>
                     <connections>
-                        <outlet property="BottomLeftImage" destination="DfP-vj-dU2" id="SBK-so-lPm"/>
-                        <outlet property="BottomRightImage" destination="P0u-U1-aaZ" id="WR9-qs-l7D"/>
-                        <outlet property="TopLeftImage" destination="U64-al-TXN" id="Gjx-Yv-HKc"/>
-                        <outlet property="TopRightImage" destination="0Ev-EI-Fwn" id="Kdr-vX-dso"/>
+                        <outlet property="BottomLeft" destination="htr-DO-ed9" id="dZb-HD-hvZ"/>
+                        <outlet property="BottomRight" destination="wq5-N1-DCR" id="RlC-ov-5eE"/>
+                        <outlet property="TopLeft" destination="Ipr-Lg-yCe" id="VFT-hI-5y8"/>
+                        <outlet property="TopRight" destination="kkh-cQ-gY0" id="KxS-jW-IU4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfD-Gz-NDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBk-xW-r9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4201" y="813"/>
+            <point key="canvasLocation" x="4332" y="813"/>
         </scene>
     </scenes>
     <resources>
         <image name="circle-xxl" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kAg-j1-Wot"/>
         <segue reference="FTy-14-59Q"/>
     </inferredMetricsTieBreakers>
 </document>

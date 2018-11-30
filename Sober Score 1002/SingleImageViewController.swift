@@ -26,7 +26,13 @@ class SingleImageViewController: UIViewController {
         
         //Should Transfer the Image name to the array of images at the end
         ImageTransfer = ImageNames[leftNumber]
+        
+        // AUTOMATICALLY goes to next View Controller
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+            self.performSegue(withIdentifier: "ImageToImages", sender: self)
+        }
     }
-    
+
+
     
 }
