@@ -10,21 +10,24 @@ import UIKit
 
 class ImageSelectViewController: UIPageViewController {
 
+    @IBOutlet weak var TopLeftImage: UIImageView!
+    @IBOutlet weak var TopRightImage: UIImageView!
+    @IBOutlet weak var BottomLeftImage: UIImageView!
+    @IBOutlet weak var BottomRightImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is SingleImageViewController
+        {
+            let vc = segue.destination as? SingleImageViewController
+            print(vc?.ImageTransfer as Any)
+        }
     }
-    */
 
 }

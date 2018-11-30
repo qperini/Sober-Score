@@ -390,9 +390,26 @@
                     <view key="view" contentMode="scaleToFill" id="xwh-Qb-oCe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-nw-rjm">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NUu-Px-zcu"/>
+                                    <constraint firstAttribute="width" constant="300" id="r8E-ix-m0q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lge-nw-rjm" firstAttribute="centerY" secondItem="xwh-Qb-oCe" secondAttribute="centerY" id="B6E-7w-PMA"/>
+                            <constraint firstItem="Lge-nw-rjm" firstAttribute="centerX" secondItem="xwh-Qb-oCe" secondAttribute="centerX" id="jnU-gm-Gn4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="08G-3s-6UR"/>
                     </view>
+                    <connections>
+                        <outlet property="SingleImage" destination="Lge-nw-rjm" id="zV7-Rz-eg0"/>
+                        <segue destination="eMi-JR-07F" kind="presentation" identifier="ImageTransfer" id="4RZ-t3-ohh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1Q-de-Mb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBk-xW-r9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3460" y="813"/>
+            <point key="canvasLocation" x="3457" y="813"/>
         </scene>
         <!--Choose Image-->
         <scene sceneID="F1K-ed-tmp">
@@ -472,10 +489,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jTY-pV-geO"/>
                     </view>
+                    <connections>
+                        <outlet property="BottomLeftImage" destination="DfP-vj-dU2" id="SBK-so-lPm"/>
+                        <outlet property="BottomRightImage" destination="P0u-U1-aaZ" id="WR9-qs-l7D"/>
+                        <outlet property="TopLeftImage" destination="U64-al-TXN" id="Gjx-Yv-HKc"/>
+                        <outlet property="TopRightImage" destination="0Ev-EI-Fwn" id="Kdr-vX-dso"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZfD-Gz-NDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4207" y="813"/>
+            <point key="canvasLocation" x="4201" y="813"/>
         </scene>
     </scenes>
     <resources>
