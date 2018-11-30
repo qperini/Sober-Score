@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j3C-kB-M1A">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <!--History-->
         <scene sceneID="PuL-yz-CmY">
             <objects>
-                <viewController id="1Gj-fG-eZd" userLabel="History" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" id="1Gj-fG-eZd" userLabel="History" customClass="HistoryViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hnx-qF-sth">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,12 +24,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGT-M9-YFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-638" y="27"/>
+            <point key="canvasLocation" x="-76" y="27"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="z6Z-vj-vRI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="j3C-kB-M1A" customClass="PageViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W41-Q7-LJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="-730"/>
         </scene>
         <!--HomeScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="HomeScreen" customClass="ViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" userLabel="HomeScreen" customClass="HomeViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,15 +126,19 @@
                         <outlet property="History" destination="Hyb-TW-CLl" id="tbu-oc-Hgm"/>
                         <outlet property="Settings" destination="AVs-w0-QKb" id="zcw-eq-5HN"/>
                         <outlet property="TakeTest" destination="Cj9-5p-5kv" id="AJV-79-ibX"/>
+                        <segue destination="LcT-Me-XiA" kind="showDetail" identifier="SettingsArrow" id="4ig-1E-E56"/>
+                        <segue destination="2hd-5X-esA" kind="showDetail" identifier="StartTestArrow" id="Y96-Iv-05I"/>
+                        <segue destination="1Gj-fG-eZd" kind="showDetail" id="eYL-3d-mZX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="670" y="27"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wQk-ta-CYO">
             <objects>
-                <viewController id="LcT-Me-XiA" userLabel="Settings" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="LcT-Me-XiA" userLabel="Settings" customClass="SettingsViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5dk-gV-CAK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,12 +148,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tI6-RU-g8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="27"/>
+            <point key="canvasLocation" x="1562" y="27"/>
         </scene>
         <!--Test-->
         <scene sceneID="tlt-05-0I3">
             <objects>
-                <viewController id="2hd-5X-esA" userLabel="Test" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestViewController" id="2hd-5X-esA" userLabel="Test" customClass="TestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hxt-ws-SaW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnr-IW-eT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="670" y="813"/>
         </scene>
     </scenes>
 </document>
