@@ -16,6 +16,7 @@
 		FA3DC13A21ADF5E8002534F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13921ADF5E8002534F6 /* Assets.xcassets */; };
 		FA3DC13D21ADF5E8002534F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */; };
 		FADD062B21B12A590040C385 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD062A21B12A590040C385 /* ImageSelectViewController.swift */; };
+		FADD063321B140590040C385 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD063221B140590040C385 /* SingleImageViewController.swift */; };
 		FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		FA3DC13C21ADF5E8002534F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3DC13E21ADF5E8002534F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADD062A21B12A590040C385 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		FADD063221B140590040C385 /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +50,7 @@
 		FA3DC12621ADF5E5002534F6 = {
 			isa = PBXGroup;
 			children = (
+				FADD063221B140590040C385 /* SingleImageViewController.swift */,
 				FA3DC13121ADF5E5002534F6 /* Sober Score 1002 */,
 				FA3DC13021ADF5E5002534F6 /* Products */,
 			);
@@ -64,15 +67,15 @@
 		FA3DC13121ADF5E5002534F6 /* Sober Score 1002 */ = {
 			isa = PBXGroup;
 			children = (
+				FA3DC13621ADF5E5002534F6 /* Main.storyboard */,
 				FA3DC13221ADF5E5002534F6 /* AppDelegate.swift */,
 				FA3DC13421ADF5E5002534F6 /* HomeViewController.swift */,
 				FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */,
 				FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */,
 				FA030B0321B0C25E007B02D0 /* GameViewControler.swift */,
 				FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */,
-				FA3DC13621ADF5E5002534F6 /* Main.storyboard */,
-				FA3DC13921ADF5E8002534F6 /* Assets.xcassets */,
 				FADD062A21B12A590040C385 /* ImageSelectViewController.swift */,
+				FA3DC13921ADF5E8002534F6 /* Assets.xcassets */,
 				FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */,
 				FA3DC13E21ADF5E8002534F6 /* Info.plist */,
 			);
@@ -156,6 +159,7 @@
 				FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */,
 				FA030B0421B0C25E007B02D0 /* GameViewControler.swift in Sources */,
 				FA030B0021B0C234007B02D0 /* HistoryViewControler.swift in Sources */,
+				FADD063321B140590040C385 /* SingleImageViewController.swift in Sources */,
 				FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

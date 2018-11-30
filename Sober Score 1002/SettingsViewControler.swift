@@ -11,6 +11,7 @@ import UIKit
 class SettingsViewController: UIViewController {
     
     @IBOutlet weak var SettingsHomeButton: UIButton!
+    @IBOutlet weak var About: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,9 @@ class SettingsViewController: UIViewController {
     
     @IBAction func SettingsHomeButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SettingsHomeArrow", sender: self)
+    }
+    @IBAction func About(_ sender: Any) {
+        self.performSegue(withIdentifier: "AboutToSingleImage", sender: self)
     }
     
 }
