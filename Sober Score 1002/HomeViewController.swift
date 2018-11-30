@@ -17,17 +17,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var Settings: UIButton!
     
     @IBOutlet weak var PageControl: UIPageControl!
-    
-    var images: [String] = ["0","1","2"]
         
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        PageControl.numberOfPages = images.co
-            images.count
-        for index in 0..<images.count {
-            frame.origin.x = scroll
-        }
         
         print("Home Loaded")
         
