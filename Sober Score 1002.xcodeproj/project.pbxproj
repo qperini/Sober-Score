@@ -18,6 +18,7 @@
 		FADD063321B140590040C385 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD063221B140590040C385 /* SingleImageViewController.swift */; };
 		FADD063921B1D43A0040C385 /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD063821B1D43A0040C385 /* SelectImageViewController.swift */; };
 		FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */; };
+		FEE1625B21B59F2B00C08A57 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1625A21B59F2B00C08A57 /* WordListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FADD063221B140590040C385 /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		FADD063821B1D43A0040C385 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGameViewController.swift; sourceTree = "<group>"; };
+		FEE1625A21B59F2B00C08A57 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */,
 				FADD063221B140590040C385 /* SingleImageViewController.swift */,
 				FADD063821B1D43A0040C385 /* SelectImageViewController.swift */,
+				FEE1625A21B59F2B00C08A57 /* WordListViewController.swift */,
 				FA3DC13921ADF5E8002534F6 /* Assets.xcassets */,
 				FA3DC13B21ADF5E8002534F6 /* LaunchScreen.storyboard */,
 				FA3DC13E21ADF5E8002534F6 /* Info.plist */,
@@ -155,6 +158,7 @@
 			files = (
 				FA3DC13521ADF5E5002534F6 /* HomeViewController.swift in Sources */,
 				FA3DC13321ADF5E5002534F6 /* AppDelegate.swift in Sources */,
+				FEE1625B21B59F2B00C08A57 /* WordListViewController.swift in Sources */,
 				FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */,
 				FA030B0421B0C25E007B02D0 /* GameViewControler.swift in Sources */,
 				FA030B0021B0C234007B02D0 /* HistoryViewControler.swift in Sources */,
