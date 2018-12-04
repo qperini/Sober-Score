@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5FFA7CD21B618AF00C8E728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFA7CC21B618A400C8E728 /* ViewController.swift */; };
+		E5FFA7CF21B61AD900C8E728 /* imessage header.png in Resources */ = {isa = PBXBuildFile; fileRef = E5FFA7CE21B61AD900C8E728 /* imessage header.png */; };
 		FA030B0021B0C234007B02D0 /* HistoryViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */; };
 		FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */; };
 		FA030B0421B0C25E007B02D0 /* GameViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA030B0321B0C25E007B02D0 /* GameViewControler.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5FFA7CC21B618A400C8E728 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E5FFA7CE21B61AD900C8E728 /* imessage header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imessage header.png"; sourceTree = "<group>"; };
 		FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewControler.swift; sourceTree = "<group>"; };
 		FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControler.swift; sourceTree = "<group>"; };
 		FA030B0321B0C25E007B02D0 /* GameViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControler.swift; sourceTree = "<group>"; };
@@ -68,8 +72,10 @@
 		FA3DC13121ADF5E5002534F6 /* Sober Score 1002 */ = {
 			isa = PBXGroup;
 			children = (
+				E5FFA7CE21B61AD900C8E728 /* imessage header.png */,
 				FA3DC13621ADF5E5002534F6 /* Main.storyboard */,
 				FA3DC13221ADF5E5002534F6 /* AppDelegate.swift */,
+				E5FFA7CC21B618A400C8E728 /* ViewController.swift */,
 				FA3DC13421ADF5E5002534F6 /* HomeViewController.swift */,
 				FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */,
 				FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */,
@@ -144,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3DC13D21ADF5E8002534F6 /* LaunchScreen.storyboard in Resources */,
+				E5FFA7CF21B61AD900C8E728 /* imessage header.png in Resources */,
 				FA3DC13A21ADF5E8002534F6 /* Assets.xcassets in Resources */,
 				FA3DC13821ADF5E5002534F6 /* Main.storyboard in Resources */,
 			);
@@ -156,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FFA7CD21B618AF00C8E728 /* ViewController.swift in Sources */,
 				FA3DC13521ADF5E5002534F6 /* HomeViewController.swift in Sources */,
 				FA3DC13321ADF5E5002534F6 /* AppDelegate.swift in Sources */,
 				FEE1625B21B59F2B00C08A57 /* WordListViewController.swift in Sources */,
@@ -311,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G53Q9HL4RV;
+				DEVELOPMENT_TEAM = 3AP27N35CM;
 				INFOPLIST_FILE = "Sober Score 1002/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -329,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G53Q9HL4RV;
+				DEVELOPMENT_TEAM = 3AP27N35CM;
 				INFOPLIST_FILE = "Sober Score 1002/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

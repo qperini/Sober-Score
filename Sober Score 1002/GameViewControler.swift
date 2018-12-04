@@ -75,8 +75,17 @@ class GameViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! WordListViewController
-        vc.Words = self.wordList
+        switch segue.identifier{
+        case "toWords":
+            let vc = segue.destination as! WordListViewController
+            vc.Words = self.wordList
+            
+        case "1-2Arrow": break
+            
+        default: break
+        }
+        
+        
     }
     
     @IBAction func toWords(_ sender: Any) {
