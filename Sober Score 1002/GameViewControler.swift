@@ -40,32 +40,38 @@ class GameViewController: UIViewController {
     
     @IBAction func setWords(_ sender: Any) {
         (sender as? UIButton)?.isEnabled = false
-        let words = ["Horse", "Cat", "Dog", "Fish", "Bird", "Orange", "Yellow", "Blue", "Green", "Black", "Table", "Chair", "Desk", "Bookcase", "Bed", "Teacher", "School", "Student", "Homework", "Class", "Apple", "Banana", "Kiwi", "Grape", "Mango"]
-        var testWords = Set<String>()
-        
-        while testWords.count < 5 {
-            let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
-            testWords.insert(words[randomIndex])
-        }
-        
-        let testwordsArray = Array(testWords)
-        wordList.append(testwordsArray[0])
-        wordList.append(testwordsArray[1])
-        wordList.append(testwordsArray[2])
-        wordList.append(testwordsArray[3])
-        wordList.append(testwordsArray[4])
-        word1.text = testwordsArray[0]
-        word2.text = testwordsArray[1]
-        word3.text = testwordsArray[2]
-        word4.text = testwordsArray[3]
-        word5.text = testwordsArray[4]
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(30), execute: {
-            self.word1.text = ""
-            self.word2.text = ""
-            self.word3.text = ""
-            self.word4.text = ""
-            self.word5.text = ""
+        let alert = UIAlertController(title: "Instructions", message: "Answer each question in this test to the best of your ability. If you see a red dot on the screen, tap it as quickly as possible.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+            let words = ["Horse", "Cat", "Dog", "Fish", "Bird", "Orange", "Yellow", "Blue", "Green", "Black", "Table", "Chair", "Desk", "Bookcase", "Bed", "Teacher", "School", "Student", "Homework", "Class", "Apple", "Banana", "Kiwi", "Grape", "Mango"]
+            var testWords = Set<String>()
+            
+            while testWords.count < 5 {
+                let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
+                testWords.insert(words[randomIndex])
+            }
+            
+            let testwordsArray = Array(testWords)
+            self.wordList.append(testwordsArray[0])
+            self.wordList.append(testwordsArray[1])
+            self.wordList.append(testwordsArray[2])
+            self.wordList.append(testwordsArray[3])
+            self.wordList.append(testwordsArray[4])
+            self.word1.text = testwordsArray[0]
+            self.word2.text = testwordsArray[1]
+            self.word3.text = testwordsArray[2]
+            self.word4.text = testwordsArray[3]
+            self.word5.text = testwordsArray[4]
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(30), execute: {
+                self.word1.text = ""
+                self.word2.text = ""
+                self.word3.text = ""
+                self.word4.text = ""
+                self.word5.text = ""
+            })
         })
+        
+        self.present(alert, animated: true)
+        
     }
     
     @IBAction func Next(_ sender: Any) {
