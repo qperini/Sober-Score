@@ -27,7 +27,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func TakeTest(_ sender: Any) {
         print("TAKE TEST")
-        self.performSegue(withIdentifier: "StartTestArrow", sender: self)
+        let alert = UIAlertController(title: "Affirmation of Age", message: "You must be 21 years of age or older to consume alcohol in the US.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel) { (action:UIAlertAction!) in
+            self.performSegue(withIdentifier: "StartTestArrow", sender: self)
+        })
+        
+        self.present(alert, animated: true)
     }
     
     @IBAction func History(_ sender: Any) {
