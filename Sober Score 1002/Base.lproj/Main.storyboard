@@ -255,48 +255,48 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0z-oI-T9f">
-                                <rect key="frame" x="139" y="128" width="97" height="30"/>
+                                <rect key="frame" x="26" y="128" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjz-Lx-tvd">
-                                <rect key="frame" x="139" y="213" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-x1-JLg">
-                                <rect key="frame" x="139" y="298" width="97" height="30"/>
+                                <rect key="frame" x="147" y="128" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzS-nf-7hB">
-                                <rect key="frame" x="139" y="389" width="97" height="30"/>
+                                <rect key="frame" x="262" y="128" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oHm-du-4nA">
-                                <rect key="frame" x="139" y="479" width="97" height="30"/>
+                                <rect key="frame" x="233" y="182" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-6f-MK5">
-                                <rect key="frame" x="163" y="577" width="49" height="30"/>
+                                <rect key="frame" x="163" y="279" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submit:" destination="y1E-WQ-G5Q" eventType="touchUpInside" id="H1w-dD-QEk"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-x1-JLg">
+                                <rect key="frame" x="60" y="182" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7xc-ys-WRa"/>
@@ -378,15 +378,6 @@
                                     <action selector="Next:" destination="2hd-5X-esA" eventType="touchUpInside" id="2X5-VH-a0U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM7-3M-beV">
-                                <rect key="frame" x="40" y="578" width="69" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="toWords:" destination="2hd-5X-esA" eventType="touchUpInside" id="Ixv-fv-zaX"/>
-                                    <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="toWords" id="Yf5-Mr-Nvs"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.44219281106954578" blue="0.90433567356193989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -419,7 +410,6 @@
                     </view>
                     <connections>
                         <outlet property="Next" destination="IgH-AG-66a" id="h6Q-EQ-tNU"/>
-                        <outlet property="toWords" destination="TM7-3M-beV" id="0gy-hG-zZk"/>
                         <outlet property="word1" destination="rNZ-Tj-fLq" id="ZLE-jH-XGt"/>
                         <outlet property="word2" destination="nyp-GE-V3I" id="8WE-qj-tG3"/>
                         <outlet property="word3" destination="xqW-4D-gur" id="Sxx-5m-7D6"/>
@@ -758,7 +748,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kAg-j1-Wot"/>
-        <segue reference="6e0-i3-Rde"/>
+        <segue reference="GX7-J7-EOS"/>
         <segue reference="mQc-jD-RW8"/>
     </inferredMetricsTieBreakers>
 </document>

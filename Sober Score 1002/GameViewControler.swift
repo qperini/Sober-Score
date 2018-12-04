@@ -10,7 +10,6 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var toWords: UIButton!
     @IBOutlet weak var Next: UIButton!
     @IBOutlet weak var word1: UILabel!
     @IBOutlet weak var word2: UILabel!
@@ -90,11 +89,5 @@ class GameViewController: UIViewController {
             
         default: break
         }
-        
-        
-    }
-    
-    @IBAction func toWords(_ sender: Any) {
-        self.performSegue(withIdentifier: "toWords", sender: self)
     }
 }
