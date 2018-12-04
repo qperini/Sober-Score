@@ -38,11 +38,6 @@ class WordListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        word1.text = Words[0]
-        word2.text = Words[1]
-        word3.text = Words[2]
-        word4.text = Words[3]
-        word5.text = Words[4]
     }
     
     
@@ -84,5 +79,6 @@ class WordListViewController: UIViewController {
         if Words.contains(w5){
             Used.append(w5)
         }
+        print(counter)
     }
 }
