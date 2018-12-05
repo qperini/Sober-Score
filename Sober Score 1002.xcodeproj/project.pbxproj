@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E5FFA7CD21B618AF00C8E728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FFA7CC21B618A400C8E728 /* ViewController.swift */; };
 		E5FFA7CF21B61AD900C8E728 /* imessage header.png in Resources */ = {isa = PBXBuildFile; fileRef = E5FFA7CE21B61AD900C8E728 /* imessage header.png */; };
-		FA030B0021B0C234007B02D0 /* HistoryViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */; };
 		FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */; };
 		FA030B0421B0C25E007B02D0 /* GameViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA030B0321B0C25E007B02D0 /* GameViewControler.swift */; };
 		FA3DC13321ADF5E5002534F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DC13221ADF5E5002534F6 /* AppDelegate.swift */; };
@@ -21,12 +20,12 @@
 		FADD063921B1D43A0040C385 /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD063821B1D43A0040C385 /* SelectImageViewController.swift */; };
 		FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */; };
 		FEE1625B21B59F2B00C08A57 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1625A21B59F2B00C08A57 /* WordListViewController.swift */; };
+		FEE1625D21B77CBB00C08A57 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1625C21B77CBB00C08A57 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E5FFA7CC21B618A400C8E728 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5FFA7CE21B61AD900C8E728 /* imessage header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imessage header.png"; sourceTree = "<group>"; };
-		FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewControler.swift; sourceTree = "<group>"; };
 		FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControler.swift; sourceTree = "<group>"; };
 		FA030B0321B0C25E007B02D0 /* GameViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewControler.swift; sourceTree = "<group>"; };
 		FA3DC12F21ADF5E5002534F6 /* Sober Score 1002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sober Score 1002.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +39,7 @@
 		FADD063821B1D43A0040C385 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotGameViewController.swift; sourceTree = "<group>"; };
 		FEE1625A21B59F2B00C08A57 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		FEE1625C21B77CBB00C08A57 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +72,12 @@
 		FA3DC13121ADF5E5002534F6 /* Sober Score 1002 */ = {
 			isa = PBXGroup;
 			children = (
-				E5FFA7CE21B61AD900C8E728 /* imessage header.png */,
 				FA3DC13621ADF5E5002534F6 /* Main.storyboard */,
+				FEE1625C21B77CBB00C08A57 /* HistoryViewController.swift */,
+				E5FFA7CE21B61AD900C8E728 /* imessage header.png */,
 				FA3DC13221ADF5E5002534F6 /* AppDelegate.swift */,
 				E5FFA7CC21B618A400C8E728 /* ViewController.swift */,
 				FA3DC13421ADF5E5002534F6 /* HomeViewController.swift */,
-				FA030AFF21B0C234007B02D0 /* HistoryViewControler.swift */,
 				FA030B0121B0C250007B02D0 /* SettingsViewControler.swift */,
 				FA030B0321B0C25E007B02D0 /* GameViewControler.swift */,
 				FEA1E9B421B0E48C0079EFB8 /* DotGameViewController.swift */,
@@ -168,8 +168,8 @@
 				FA3DC13321ADF5E5002534F6 /* AppDelegate.swift in Sources */,
 				FEE1625B21B59F2B00C08A57 /* WordListViewController.swift in Sources */,
 				FA030B0221B0C250007B02D0 /* SettingsViewControler.swift in Sources */,
+				FEE1625D21B77CBB00C08A57 /* HistoryViewController.swift in Sources */,
 				FA030B0421B0C25E007B02D0 /* GameViewControler.swift in Sources */,
-				FA030B0021B0C234007B02D0 /* HistoryViewControler.swift in Sources */,
 				FADD063921B1D43A0040C385 /* SelectImageViewController.swift in Sources */,
 				FADD063321B140590040C385 /* SingleImageViewController.swift in Sources */,
 				FEA1E9B521B0E48C0079EFB8 /* DotGameViewController.swift in Sources */,

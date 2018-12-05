@@ -232,7 +232,6 @@
                         <outlet property="About" destination="t3g-Qk-L0Y" id="yay-34-YnD"/>
                         <outlet property="SettingsHomeButton" destination="Suw-gt-qMD" id="N6z-4g-HGy"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="SettingsHomeArrow" id="FTy-14-59Q"/>
-                        <segue destination="8Cp-AI-QL8" kind="showDetail" identifier="AboutToSingleImage" id="6y8-ZA-oLW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tI6-RU-g8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -268,6 +267,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-x1-JLg">
+                                <rect key="frame" x="60" y="182" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zzS-nf-7hB">
                                 <rect key="frame" x="262" y="128" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -283,20 +289,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-6f-MK5">
-                                <rect key="frame" x="163" y="279" width="49" height="30"/>
+                                <rect key="frame" x="163" y="244" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submit:" destination="y1E-WQ-G5Q" eventType="touchUpInside" id="H1w-dD-QEk"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-x1-JLg">
-                                <rect key="frame" x="60" y="182" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7xc-ys-WRa"/>
@@ -313,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uab-XR-ZTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4334" y="813"/>
+            <point key="canvasLocation" x="5498" y="813"/>
         </scene>
         <!--Test-->
         <scene sceneID="tlt-05-0I3">
@@ -454,7 +453,7 @@
                     <connections>
                         <outlet property="button" destination="Ook-Le-Kwq" id="svY-JT-uVU"/>
                         <outlet property="counterLabel" destination="AGe-OK-dLL" id="O30-gJ-XBM"/>
-                        <segue destination="bOD-hd-Sw2" kind="show" identifier="toMom" id="JzS-CY-qIf"/>
+                        <segue destination="bOD-hd-Sw2" kind="show" identifier="2-3Arrow" id="JzS-CY-qIf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1h-yd-0tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -488,11 +487,12 @@
                         <outlet property="SingleImage" destination="Lge-nw-rjm" id="zV7-Rz-eg0"/>
                         <segue destination="MkK-da-sHP" kind="presentation" identifier="ImageTransfer" id="3C9-fU-BRO"/>
                         <segue destination="MkK-da-sHP" kind="showDetail" identifier="ImageToImages" id="kAg-j1-Wot"/>
+                        <segue destination="MkK-da-sHP" kind="presentation" identifier="toPhotos" id="TP3-Jb-O44"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1Q-de-Mb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2751" y="27"/>
+            <point key="canvasLocation" x="3316" y="813"/>
         </scene>
         <!--Select Image View Controller-->
         <scene sceneID="w97-fx-oHq">
@@ -583,7 +583,9 @@
                                     <constraint firstAttribute="height" constant="150" id="G5S-CZ-w8U"/>
                                     <constraint firstAttribute="width" constant="150" id="cMI-9i-nl2"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="topLeft:" destination="MkK-da-sHP" eventType="touchUpInside" id="S8L-hH-l1I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHO-W0-TbL">
                                 <rect key="frame" x="195" y="252" width="150" height="150"/>
@@ -591,7 +593,9 @@
                                     <constraint firstAttribute="width" constant="150" id="o4F-M4-t1A"/>
                                     <constraint firstAttribute="height" constant="150" id="oa8-zJ-sEV"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="topRight:" destination="MkK-da-sHP" eventType="touchUpInside" id="Q76-S8-XWo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBA-ZZ-itc">
                                 <rect key="frame" x="30" y="417" width="150" height="150"/>
@@ -599,7 +603,9 @@
                                     <constraint firstAttribute="height" constant="150" id="cLY-kn-xzv"/>
                                     <constraint firstAttribute="width" constant="150" id="nUM-2R-uOy"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="bottomLeft:" destination="MkK-da-sHP" eventType="touchUpInside" id="cou-CS-zNP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-sM-hew">
                                 <rect key="frame" x="195" y="417" width="150" height="150"/>
@@ -607,7 +613,9 @@
                                     <constraint firstAttribute="width" constant="150" id="OCI-0v-gyT"/>
                                     <constraint firstAttribute="height" constant="150" id="TQo-wZ-RTT"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonRight:" destination="MkK-da-sHP" eventType="touchUpInside" id="wcH-g4-dRN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -635,11 +643,15 @@
                         <outlet property="BottomRight" destination="wq5-N1-DCR" id="RlC-ov-5eE"/>
                         <outlet property="TopLeft" destination="Ipr-Lg-yCe" id="VFT-hI-5y8"/>
                         <outlet property="TopRight" destination="kkh-cQ-gY0" id="KxS-jW-IU4"/>
+                        <outlet property="button1" destination="pHO-W0-TbL" id="UvZ-cY-44H"/>
+                        <outlet property="button2" destination="pHO-W0-TbL" id="KeU-1q-Lha"/>
+                        <outlet property="button3" destination="kBA-ZZ-itc" id="wnv-7F-izL"/>
+                        <outlet property="button4" destination="p6d-sM-hew" id="jxY-4p-Wma"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBk-xW-r9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4047" y="27"/>
+            <point key="canvasLocation" x="3807" y="-175"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VVj-5c-ssC">
@@ -703,6 +715,7 @@
                                 </state>
                                 <connections>
                                     <action selector="send:" destination="bOD-hd-Sw2" eventType="touchUpInside" id="Jov-bn-sP2"/>
+                                    <segue destination="8Cp-AI-QL8" kind="presentation" identifier="3-4Arrow" id="Pgv-Va-Hzq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -747,8 +760,8 @@
         <image name="imessage header.png" width="994" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kAg-j1-Wot"/>
-        <segue reference="GX7-J7-EOS"/>
-        <segue reference="mQc-jD-RW8"/>
+        <segue reference="TP3-Jb-O44"/>
+        <segue reference="6e0-i3-Rde"/>
+        <segue reference="FTy-14-59Q"/>
     </inferredMetricsTieBreakers>
 </document>

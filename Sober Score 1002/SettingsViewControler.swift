@@ -23,8 +23,8 @@ class SettingsViewController: UIViewController {
     @IBAction func SettingsHomeButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SettingsHomeArrow", sender: self)
     }
-    @IBAction func About(_ sender: Any) {
-        self.performSegue(withIdentifier: "AboutToSingleImage", sender: self)
-    }
+//    @IBAction func About(_ sender: Any) {
+//        self.performSegue(withIdentifier: "aboutArrow", sender: self)
+//    }
     
 }

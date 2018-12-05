@@ -19,13 +19,13 @@ class ViewController: UIViewController {
         mom.text = texts.randomElement()
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(20), execute: {
             self.userinput.isUserInteractionEnabled = false
-            var text: String = self.userinput.text!
+            var _: String = self.userinput.text!
             self.performSegue(withIdentifier: "words", sender: nil)
         })
     }
     
     @IBAction func send(_ sender: Any) {
-        self.performSegue(withIdentifier: "words", sender: nil)
+        self.performSegue(withIdentifier: "3-4Arrow", sender: nil)
     }
 }
 

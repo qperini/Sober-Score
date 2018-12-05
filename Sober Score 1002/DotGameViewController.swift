@@ -57,7 +57,7 @@ class DotGameViewController: UIViewController {
         if (scoreInt != 0) && (counter >= 5) {
             scoreTimer.invalidate()
             self.button.isHidden = true
-            self.performSegue(withIdentifier: "toMom", sender: nil)
+            self.performSegue(withIdentifier: "2-3Arrow", sender: nil)
         }
         if (scoreInt != 0) {
              counter += 1
