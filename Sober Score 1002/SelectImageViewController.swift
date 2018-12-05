@@ -10,6 +10,10 @@ import UIKit
 
 class SelectImageViewController: UIViewController {
 
+    var counter3 = 0
+    
+    var counter = 0
+    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -25,21 +29,10 @@ class SelectImageViewController: UIViewController {
     var IIQ = [String]()
     
     var answer = 0
-    var counter = 0
-    var plus = 0
     var Q1 = 0
     var Q2 = 0
     var Q3 = 0
     var Q4 = 0
-    
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    //    {
-    //        if segue.destination is SingleImageViewController
-    //        {
-    //            let vc = segue.destination as? SingleImageViewController
-    //            vc?.ImageTransfer = ""
-    //        }
-    //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,12 +41,13 @@ class SelectImageViewController: UIViewController {
     
     func questions() {
         answer = Int (arc4random_uniform(4))
+        answer = 3
         if answer == 1 {
             TopLeft.image = UIImage(named: Used[0])
             IIQ.append(Used[0])
-            Q2 = Int (arc4random_uniform(16))
-            Q3 = Int (arc4random_uniform(16))
-            Q4 = Int (arc4random_uniform(16))
+            Q2 = Int (arc4random_uniform(24))
+            Q3 = Int (arc4random_uniform(24))
+            Q4 = Int (arc4random_uniform(24))
             if !(IIQ.contains(Images[Q2])){
                 TopRight.image = UIImage(named: Images[Q2])
                 IIQ.append(Images[Q2])
@@ -72,9 +66,9 @@ class SelectImageViewController: UIViewController {
         } else if answer == 2 {
             TopRight.image = UIImage(named: Used[0])
             IIQ.append(Used[0])
-            Q1 = Int (arc4random_uniform(16))
-            Q3 = Int (arc4random_uniform(16))
-            Q4 = Int (arc4random_uniform(16))
+            Q1 = Int (arc4random_uniform(24))
+            Q3 = Int (arc4random_uniform(24))
+            Q4 = Int (arc4random_uniform(24))
             if !(IIQ.contains(Images[Q1])){
                 TopLeft.image = UIImage(named: Images[Q1])
                 IIQ.append(Images[Q1])
@@ -93,9 +87,9 @@ class SelectImageViewController: UIViewController {
         } else if answer == 3 {
             BottomLeft.image = UIImage(named: Used[0])
             IIQ.append(Used[0])
-            Q1 = Int (arc4random_uniform(16))
-            Q2 = Int (arc4random_uniform(16))
-            Q4 = Int (arc4random_uniform(16))
+            Q1 = Int (arc4random_uniform(24))
+            Q2 = Int (arc4random_uniform(24))
+            Q4 = Int (arc4random_uniform(24))
             if !(IIQ.contains(Images[Q1])){
                 TopRight.image = UIImage(named: Images[Q1])
                 IIQ.append(Images[Q1])
@@ -114,9 +108,9 @@ class SelectImageViewController: UIViewController {
         } else {
             BottomRight.image = UIImage(named: Used[0])
             IIQ.append(Used[0])
-            Q1 = Int (arc4random_uniform(16))
-            Q2 = Int (arc4random_uniform(16))
-            Q3 = Int (arc4random_uniform(16))
+            Q1 = Int (arc4random_uniform(24))
+            Q2 = Int (arc4random_uniform(24))
+            Q3 = Int (arc4random_uniform(24))
             if !(IIQ.contains(Images[Q1])){
                 TopRight.image = UIImage(named: Images[Q1])
                 IIQ.append(Images[Q1])
@@ -144,6 +138,8 @@ class SelectImageViewController: UIViewController {
             counter -= 1
         }
         print(counter)
+        self.performSegue(withIdentifier: "4-5Arrow1", sender: nil)
+        
     }
     
     @IBAction func topRight(_ sender: UIButton) {
@@ -153,6 +149,8 @@ class SelectImageViewController: UIViewController {
             counter -= 1
         }
         print(counter)
+        self.performSegue(withIdentifier: "4-5Arrow2", sender: nil)
+        
     }
     
     @IBAction func bottomLeft(_ sender: UIButton) {
@@ -162,6 +160,8 @@ class SelectImageViewController: UIViewController {
             counter -= 1
         }
         print(counter)
+        self.performSegue(withIdentifier: "4-5Arrow3", sender: nil)
+        
     }
     
     @IBAction func buttonRight(_ sender: UIButton) {
@@ -171,5 +171,8 @@ class SelectImageViewController: UIViewController {
             counter -= 1
         }
         print(counter)
+        self.performSegue(withIdentifier: "4-5Arrow4", sender: nil)
+        
     }
+    
 }

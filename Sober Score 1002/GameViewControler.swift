@@ -70,12 +70,11 @@ class GameViewController: UIViewController {
         })
         
         self.present(alert, animated: true)
-        
     }
     
     @IBAction func Next(_ sender: Any) {
         self.performSegue(withIdentifier: "1-2Arrow", sender: self)
-        performSegue(withIdentifier: "1-6Arrow", sender: self)
+        performSegue(withIdentifier: "toWords", sender: self)
         
     }
     

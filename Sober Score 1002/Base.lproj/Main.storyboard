@@ -294,6 +294,7 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submit:" destination="y1E-WQ-G5Q" eventType="touchUpInside" id="H1w-dD-QEk"/>
+                                    <segue destination="lxo-Tb-bDg" kind="showDetail" identifier="5-6Arrow" id="W2F-wJ-asF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -313,6 +314,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uab-XR-ZTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5498" y="813"/>
+        </scene>
+        <!--Final View Controller-->
+        <scene sceneID="CoP-6j-Xzh">
+            <objects>
+                <viewController id="lxo-Tb-bDg" customClass="FinalViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9U-X9-msy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT4-V6-0iN">
+                                <rect key="frame" x="118" y="240" width="139" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cOk-nY-jov"/>
+                    </view>
+                    <connections>
+                        <outlet property="score" destination="zT4-V6-0iN" id="IYu-Pg-hVw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCy-H1-1aR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6805.6000000000004" y="812.74362818590714"/>
         </scene>
         <!--Test-->
         <scene sceneID="tlt-05-0I3">
@@ -415,7 +443,7 @@
                         <outlet property="word4" destination="Z3H-hK-hGf" id="sq1-TE-kGt"/>
                         <outlet property="word5" destination="aeL-um-cvl" id="KM7-2r-4fr"/>
                         <segue destination="65B-PK-r6p" kind="showDetail" identifier="1-2Arrow" id="5ne-s3-AZH"/>
-                        <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="1-6Arrow" id="GX7-J7-EOS"/>
+                        <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="toWords" id="fzd-in-tVx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnr-IW-eT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -485,14 +513,12 @@
                     </view>
                     <connections>
                         <outlet property="SingleImage" destination="Lge-nw-rjm" id="zV7-Rz-eg0"/>
-                        <segue destination="MkK-da-sHP" kind="presentation" identifier="ImageTransfer" id="3C9-fU-BRO"/>
-                        <segue destination="MkK-da-sHP" kind="showDetail" identifier="ImageToImages" id="kAg-j1-Wot"/>
-                        <segue destination="MkK-da-sHP" kind="presentation" identifier="toPhotos" id="TP3-Jb-O44"/>
+                        <segue destination="MkK-da-sHP" kind="showDetail" identifier="toPhotos" id="MgU-oY-Vsy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1Q-de-Mb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3316" y="813"/>
+            <point key="canvasLocation" x="3417" y="1001"/>
         </scene>
         <!--Select Image View Controller-->
         <scene sceneID="w97-fx-oHq">
@@ -585,6 +611,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="topLeft:" destination="MkK-da-sHP" eventType="touchUpInside" id="S8L-hH-l1I"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow1" id="7Qb-pc-AZe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHO-W0-TbL">
@@ -595,6 +622,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="topRight:" destination="MkK-da-sHP" eventType="touchUpInside" id="Q76-S8-XWo"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow2" id="etv-9d-gEI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBA-ZZ-itc">
@@ -605,6 +633,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="bottomLeft:" destination="MkK-da-sHP" eventType="touchUpInside" id="cou-CS-zNP"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow3" id="OQv-0s-u9b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-sM-hew">
@@ -615,6 +644,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="buttonRight:" destination="MkK-da-sHP" eventType="touchUpInside" id="wcH-g4-dRN"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow4" id="3qW-k9-XwM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -715,7 +745,7 @@
                                 </state>
                                 <connections>
                                     <action selector="send:" destination="bOD-hd-Sw2" eventType="touchUpInside" id="Jov-bn-sP2"/>
-                                    <segue destination="8Cp-AI-QL8" kind="presentation" identifier="3-4Arrow" id="Pgv-Va-Hzq"/>
+                                    <segue destination="8Cp-AI-QL8" kind="showDetail" identifier="3-4Arrow" id="Pgv-Va-Hzq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -747,7 +777,6 @@
                     <connections>
                         <outlet property="mom" destination="qks-Vi-gGU" id="Ap7-xs-7JE"/>
                         <outlet property="userinput" destination="IXI-np-6zh" id="yK6-Gm-WoV"/>
-                        <segue destination="y1E-WQ-G5Q" kind="show" identifier="words" id="6e0-i3-Rde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xP4-rO-Ss2" sceneMemberID="firstResponder"/>
@@ -760,8 +789,7 @@
         <image name="imessage header.png" width="994" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TP3-Jb-O44"/>
-        <segue reference="6e0-i3-Rde"/>
-        <segue reference="FTy-14-59Q"/>
+        <segue reference="7Qb-pc-AZe"/>
+        <segue reference="mQc-jD-RW8"/>
     </inferredMetricsTieBreakers>
 </document>

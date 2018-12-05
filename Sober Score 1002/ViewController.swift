@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var mom: UILabel!
     @IBOutlet weak var userinput: UITextField!
     
+    var counter2 = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userinput.autocorrectionType = .no
@@ -20,12 +22,13 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(20), execute: {
             self.userinput.isUserInteractionEnabled = false
             var _: String = self.userinput.text!
-            self.performSegue(withIdentifier: "words", sender: nil)
+            self.performSegue(withIdentifier: "3-4Arroww", sender: nil)
         })
     }
     
     @IBAction func send(_ sender: Any) {
         self.performSegue(withIdentifier: "3-4Arrow", sender: nil)
     }
+    
 }
 

@@ -10,6 +10,10 @@ import UIKit
 
 class WordListViewController: UIViewController {
     
+    var counter4 = 0
+    
+    var counter = 0
+    
     @IBOutlet weak var subButt: UIButton!
     
     @IBOutlet weak var word1: UILabel!
@@ -29,8 +33,6 @@ class WordListViewController: UIViewController {
     var w3 = ""
     var w4 = ""
     var w5 = ""
-    
-    var counter = 0
     
     var Words = [String]()
     var Used = [String]()
@@ -79,6 +81,7 @@ class WordListViewController: UIViewController {
         if Words.contains(w5){
             Used.append(w5)
         }
-        print(counter)
+        self.performSegue(withIdentifier: "5-6Arrow", sender: nil)
     }
+    
 }

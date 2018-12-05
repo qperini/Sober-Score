@@ -17,7 +17,9 @@ class DotGameViewController: UIViewController {
     
     var scoreInt = 0
     
-    var counter = 0
+    var cBut = 0
+    
+    var counter1 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,13 +56,13 @@ class DotGameViewController: UIViewController {
     }
     
     @IBAction func stop(_ sender: Any) {
-        if (scoreInt != 0) && (counter >= 5) {
+        if (scoreInt != 0) && (cBut >= 5) {
             scoreTimer.invalidate()
             self.button.isHidden = true
-            self.performSegue(withIdentifier: "2-3Arrow", sender: nil)
+            performSegue(withIdentifier: "2-3Arrow", sender: nil)
         }
         if (scoreInt != 0) {
-             counter += 1
+             cBut += 1
             
             // Find the button's width and height
             let buttonWidth = button.frame.width
@@ -85,11 +87,11 @@ class DotGameViewController: UIViewController {
         
     }
     
+    
     @objc func updateScoreTimer() {
         scoreInt += 1
         counterLabel.text = String(scoreInt)
     }
-    
     
 }
 
