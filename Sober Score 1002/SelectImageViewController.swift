@@ -10,9 +10,8 @@ import UIKit
 
 class SelectImageViewController: UIViewController {
 
-    var counter3 = 0
     
-    var counter = 0
+    @IBOutlet weak var score: UILabel!
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -34,14 +33,21 @@ class SelectImageViewController: UIViewController {
     var Q3 = 0
     var Q4 = 0
     
+    var scoreCounter4 = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let scoreC = String(scoreCounter4)
+        score.text = scoreC
         questions()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     func questions() {
         answer = Int (arc4random_uniform(4))
-        answer = 3
         if answer == 1 {
             TopLeft.image = UIImage(named: Used[0])
             IIQ.append(Used[0])
@@ -133,46 +139,44 @@ class SelectImageViewController: UIViewController {
    
     @IBAction func topLeft(_ sender: UIButton) {
         if answer == 1 {
-            counter += 1
+            scoreCounter4 += 1
         } else {
-            counter -= 1
+            scoreCounter4 -= 1
         }
-        print(counter)
         self.performSegue(withIdentifier: "4-5Arrow1", sender: nil)
         
     }
     
     @IBAction func topRight(_ sender: UIButton) {
         if answer == 2 {
-            counter += 1
+            scoreCounter4 += 1
         } else {
-            counter -= 1
+            scoreCounter4 -= 1
         }
-        print(counter)
         self.performSegue(withIdentifier: "4-5Arrow2", sender: nil)
-        
     }
     
     @IBAction func bottomLeft(_ sender: UIButton) {
         if answer == 3 {
-            counter += 1
+            scoreCounter4 += 1
         } else {
-            counter -= 1
+            scoreCounter4 -= 1
         }
-        print(counter)
         self.performSegue(withIdentifier: "4-5Arrow3", sender: nil)
-        
     }
     
     @IBAction func buttonRight(_ sender: UIButton) {
         if answer == 4 {
-            counter += 1
+            scoreCounter4 += 1
         } else {
-            counter -= 1
+            scoreCounter4 -= 1
         }
-        print(counter)
         self.performSegue(withIdentifier: "4-5Arrow4", sender: nil)
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! WordListViewController
+        vc.scoreCounter5 = self.scoreCounter4
     }
     
 }

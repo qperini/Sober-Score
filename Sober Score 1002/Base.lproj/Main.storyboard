@@ -481,12 +481,12 @@
                     <connections>
                         <outlet property="button" destination="Ook-Le-Kwq" id="svY-JT-uVU"/>
                         <outlet property="counterLabel" destination="AGe-OK-dLL" id="O30-gJ-XBM"/>
-                        <segue destination="bOD-hd-Sw2" kind="show" identifier="2-3Arrow" id="JzS-CY-qIf"/>
+                        <segue destination="bOD-hd-Sw2" kind="presentation" identifier="2-3Arrow" id="JzS-CY-qIf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1h-yd-0tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560.8" y="812.74362818590714"/>
+            <point key="canvasLocation" x="1519" y="813"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="2Ex-yU-Eit">
@@ -503,6 +503,13 @@
                                     <constraint firstAttribute="width" constant="300" id="r8E-ix-m0q"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZN-ry-o0I">
+                                <rect key="frame" x="166" y="558" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -513,12 +520,13 @@
                     </view>
                     <connections>
                         <outlet property="SingleImage" destination="Lge-nw-rjm" id="zV7-Rz-eg0"/>
-                        <segue destination="MkK-da-sHP" kind="showDetail" identifier="toPhotos" id="MgU-oY-Vsy"/>
+                        <outlet property="score" destination="kZN-ry-o0I" id="ThO-Gd-ebM"/>
+                        <segue destination="MkK-da-sHP" kind="presentation" identifier="toPhotos" id="MgU-oY-Vsy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1Q-de-Mb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3417" y="1001"/>
+            <point key="canvasLocation" x="3458" y="813"/>
         </scene>
         <!--Select Image View Controller-->
         <scene sceneID="w97-fx-oHq">
@@ -611,7 +619,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="topLeft:" destination="MkK-da-sHP" eventType="touchUpInside" id="S8L-hH-l1I"/>
-                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow1" id="7Qb-pc-AZe"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="4-5Arrow1" id="7Qb-pc-AZe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHO-W0-TbL">
@@ -622,7 +630,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="topRight:" destination="MkK-da-sHP" eventType="touchUpInside" id="Q76-S8-XWo"/>
-                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow2" id="etv-9d-gEI"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="4-5Arrow2" id="etv-9d-gEI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBA-ZZ-itc">
@@ -633,7 +641,7 @@
                                 </constraints>
                                 <connections>
                                     <action selector="bottomLeft:" destination="MkK-da-sHP" eventType="touchUpInside" id="cou-CS-zNP"/>
-                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow3" id="OQv-0s-u9b"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="4-5Arrow3" id="OQv-0s-u9b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6d-sM-hew">
@@ -644,9 +652,16 @@
                                 </constraints>
                                 <connections>
                                     <action selector="buttonRight:" destination="MkK-da-sHP" eventType="touchUpInside" id="wcH-g4-dRN"/>
-                                    <segue destination="y1E-WQ-G5Q" kind="showDetail" identifier="4-5Arrow4" id="3qW-k9-XwM"/>
+                                    <segue destination="y1E-WQ-G5Q" kind="presentation" identifier="4-5Arrow4" id="3qW-k9-XwM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I1-Mz-MZY">
+                                <rect key="frame" x="166" y="599" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -677,11 +692,12 @@
                         <outlet property="button2" destination="pHO-W0-TbL" id="KeU-1q-Lha"/>
                         <outlet property="button3" destination="kBA-ZZ-itc" id="wnv-7F-izL"/>
                         <outlet property="button4" destination="p6d-sM-hew" id="jxY-4p-Wma"/>
+                        <outlet property="score" destination="9I1-Mz-MZY" id="e9Z-fk-Esb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBk-xW-r9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3807" y="-175"/>
+            <point key="canvasLocation" x="4545" y="813"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VVj-5c-ssC">
@@ -745,9 +761,16 @@
                                 </state>
                                 <connections>
                                     <action selector="send:" destination="bOD-hd-Sw2" eventType="touchUpInside" id="Jov-bn-sP2"/>
-                                    <segue destination="8Cp-AI-QL8" kind="showDetail" identifier="3-4Arrow" id="Pgv-Va-Hzq"/>
+                                    <segue destination="8Cp-AI-QL8" kind="presentation" identifier="3-4Arrow" id="Pgv-Va-Hzq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flf-jd-J7v">
+                                <rect key="frame" x="161" y="386" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -776,6 +799,7 @@
                     </view>
                     <connections>
                         <outlet property="mom" destination="qks-Vi-gGU" id="Ap7-xs-7JE"/>
+                        <outlet property="score" destination="flf-jd-J7v" id="k9O-2l-nTI"/>
                         <outlet property="userinput" destination="IXI-np-6zh" id="yK6-Gm-WoV"/>
                     </connections>
                 </viewController>
@@ -789,7 +813,7 @@
         <image name="imessage header.png" width="994" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Qb-pc-AZe"/>
+        <segue reference="OQv-0s-u9b"/>
         <segue reference="mQc-jD-RW8"/>
     </inferredMetricsTieBreakers>
 </document>

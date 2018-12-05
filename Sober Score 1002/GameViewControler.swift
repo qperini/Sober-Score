@@ -74,8 +74,6 @@ class GameViewController: UIViewController {
     
     @IBAction func Next(_ sender: Any) {
         self.performSegue(withIdentifier: "1-2Arrow", sender: self)
-        performSegue(withIdentifier: "toWords", sender: self)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

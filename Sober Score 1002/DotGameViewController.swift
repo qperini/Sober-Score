@@ -19,7 +19,7 @@ class DotGameViewController: UIViewController {
     
     var cBut = 0
     
-    var counter1 = 0
+    var scoreCounter1 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,10 @@ class DotGameViewController: UIViewController {
         if (scoreInt != 0) && (cBut >= 5) {
             scoreTimer.invalidate()
             self.button.isHidden = true
-            performSegue(withIdentifier: "2-3Arrow", sender: nil)
+            if scoreInt > 1000 {
+                scoreCounter1 += 4
+            }
+            self.performSegue(withIdentifier: "2-3Arrow", sender: self)
         }
         if (scoreInt != 0) {
              cBut += 1
@@ -87,11 +90,14 @@ class DotGameViewController: UIViewController {
         
     }
     
-    
     @objc func updateScoreTimer() {
         scoreInt += 1
         counterLabel.text = String(scoreInt)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ViewController
+        vc.scoreCounter2 = self.scoreCounter1
+    }
 }
 

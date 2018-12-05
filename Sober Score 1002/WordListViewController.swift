@@ -10,9 +10,7 @@ import UIKit
 
 class WordListViewController: UIViewController {
     
-    var counter4 = 0
-    
-    var counter = 0
+    var scoreCounter5 = 0
     
     @IBOutlet weak var subButt: UIButton!
     
@@ -42,6 +40,9 @@ class WordListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     
     @IBAction func submit(_ sender: UIButton) {
         w1 = answer1.text!
@@ -51,19 +52,19 @@ class WordListViewController: UIViewController {
         w5 = answer5.text!
         
         if Words.contains(w1) && !(Used.contains(w1)){
-            counter += 1
+            scoreCounter5 += 1
         }
         if Words.contains(w2) && !(Used.contains(w2)){
-            counter += 1
+            scoreCounter5 += 1
         }
         if Words.contains(w3) && !(Used.contains(w3)){
-            counter += 1
+            scoreCounter5 += 1
         }
         if Words.contains(w4) && !(Used.contains(w4)){
-            counter += 1
+            scoreCounter5 += 1
         }
         if Words.contains(w5) && !(Used.contains(w5)){
-            counter += 1
+            scoreCounter5 += 1
         }
         
         if Words.contains(w1){
@@ -84,4 +85,8 @@ class WordListViewController: UIViewController {
         self.performSegue(withIdentifier: "5-6Arrow", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! FinalViewController
+        vc.scoreCounter6 = self.scoreCounter5
+    }
 }

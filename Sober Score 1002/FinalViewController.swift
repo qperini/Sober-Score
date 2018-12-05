@@ -10,17 +10,21 @@ import UIKit
 
 class FinalViewController: UIViewController {
 
-    var counter5 = 0
+    var scoreCounter6 = 0
     
     @IBOutlet weak var score: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        score.text = String(counter5)
+        
+        score.text = String(scoreCounter6)
         // Do any additional setup after loading the view.
     }
     
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     /*
     // MARK: - Navigation
 
