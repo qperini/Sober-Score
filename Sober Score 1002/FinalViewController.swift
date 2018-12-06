@@ -9,8 +9,13 @@
 import UIKit
 
 class FinalViewController: UIViewController {
-
+    @IBOutlet weak var HomeButton: UIButton!
+    
+    @IBOutlet weak var ScoreCan: UIImageView!
+    
     var scoreCounter6 = 0
+    
+    var convertedScore = 1
     
     @IBOutlet weak var score: UILabel!
     
@@ -19,20 +24,46 @@ class FinalViewController: UIViewController {
         
         score.text = String(scoreCounter6)
         // Do any additional setup after loading the view.
+        if convertedScore == 1 {
+            ScoreCan.image = UIImage(named: "Level1")
+        }
+        if convertedScore == 2 {
+            ScoreCan.image = UIImage(named: "Level2")
+        }
+        if convertedScore == 3 {
+            ScoreCan.image = UIImage(named: "Level3")
+        }
+        if convertedScore == 4 {
+            ScoreCan.image = UIImage(named: "Level4")
+        }
+        if convertedScore == 5 {
+            ScoreCan.image = UIImage(named: "Level5")
+        }
+        if convertedScore == 6 {
+            ScoreCan.image = UIImage(named: "Level6")
+        }
+        if convertedScore == 7 {
+            ScoreCan.image = UIImage(named: "Level7")
+        }
+        if convertedScore == 8 {
+            ScoreCan.image = UIImage(named: "Level8")
+        }
+        if convertedScore == 9 {
+            ScoreCan.image = UIImage(named: "Level9")
+        }
+        if convertedScore == 10 {
+            ScoreCan.image = UIImage(named: "Level0")
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func HomeButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "ScoreToHome", sender: self)
     }
-    */
+    
 
 }
