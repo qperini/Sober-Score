@@ -411,13 +411,6 @@
                                     <action selector="SettingsHomeButton:" destination="LcT-Me-XiA" eventType="touchUpInside" id="Dc0-Wh-Unc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT4-V6-0iN">
-                                <rect key="frame" x="-11" y="586" width="139" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.4863590908" green="0.89798422980000003" blue="1" alpha="0.92286531689999995" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -437,7 +430,6 @@
                     <connections>
                         <outlet property="HomeButton" destination="sMF-tF-RzE" id="k3j-xQ-jpp"/>
                         <outlet property="ScoreCan" destination="AwZ-LT-sDj" id="3gq-wy-pYc"/>
-                        <outlet property="score" destination="zT4-V6-0iN" id="IYu-Pg-hVw"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="ScoreToHome" id="Yae-O8-jCg"/>
                     </connections>
                 </viewController>
@@ -918,7 +910,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7Qb-pc-AZe"/>
-        <segue reference="4ig-1E-E56"/>
+        <segue reference="Or8-qX-9x4"/>
         <segue reference="Yae-O8-jCg"/>
     </inferredMetricsTieBreakers>
 </document>

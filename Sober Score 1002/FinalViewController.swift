@@ -13,16 +13,12 @@ class FinalViewController: UIViewController {
     
     @IBOutlet weak var ScoreCan: UIImageView!
     
-    var scoreCounter6 = 0
-    
     var convertedScore = 1
     
-    @IBOutlet weak var score: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        score.text = String(scoreCounter6)
         // Do any additional setup after loading the view.
         if convertedScore == 1 {
             ScoreCan.image = UIImage(named: "Level1")
