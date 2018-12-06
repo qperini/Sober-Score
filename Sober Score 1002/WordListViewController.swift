@@ -37,6 +37,7 @@ class WordListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Fill In Loaded")
         // Do any additional setup after loading the view.
     }
     

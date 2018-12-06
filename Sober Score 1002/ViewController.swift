@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Text Loaded")
         let scoreC = String(scoreCounter2)
         score.text = scoreC
         userinput.autocorrectionType = .no

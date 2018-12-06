@@ -37,6 +37,7 @@ class SelectImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Image Select Loaded")
         let scoreC = String(scoreCounter4)
         score.text = scoreC
         questions()

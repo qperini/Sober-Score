@@ -23,7 +23,7 @@ class DotGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("Button Loaded")
         // Find the button's width and height
         let buttonWidth = button.frame.width
         let buttonHeight = button.frame.height

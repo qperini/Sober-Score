@@ -21,7 +21,7 @@ class SingleImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("long")
+        print("Image Loaded")
         print(scoreCounter3)
         // Randonly Generates an Image from the array decalred above
         let scoreC = String(scoreCounter3)

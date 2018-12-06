@@ -207,7 +207,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="About:" destination="LcT-Me-XiA" eventType="touchUpInside" id="7A7-Rs-EJQ"/>
+                                            <action selector="About:" destination="LcT-Me-XiA" eventType="touchUpInside" id="VmA-8B-o18"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -232,11 +232,76 @@
                         <outlet property="About" destination="t3g-Qk-L0Y" id="yay-34-YnD"/>
                         <outlet property="SettingsHomeButton" destination="Suw-gt-qMD" id="N6z-4g-HGy"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="SettingsHomeArrow" id="FTy-14-59Q"/>
+                        <segue destination="3om-8A-AtQ" kind="showDetail" identifier="SettingsAboutArrow" id="1Dg-RM-jmh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tI6-RU-g8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1560.8" y="26.53673163418291"/>
+        </scene>
+        <!--About Page View Controller-->
+        <scene sceneID="3IL-A7-Blg">
+            <objects>
+                <viewController id="3om-8A-AtQ" customClass="AboutPageViewController" customModule="Sober_Score_1002" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEA-Ow-xyW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOk-nX-9O4">
+                                <rect key="frame" x="138" y="585" width="99" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackToSettings:" destination="3om-8A-AtQ" eventType="touchUpInside" id="B5H-bu-gQ1"/>
+                                    <action selector="SettingsHomeButton:" destination="LcT-Me-XiA" eventType="touchUpInside" id="DAo-Xt-zly"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CS50BOYZ2" translatesAutoresizingMaskIntoConstraints="NO" id="bru-YU-HpL">
+                                <rect key="frame" x="16" y="50" width="343" height="234"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CS50 final poject 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOq-Xp-WHf">
+                                <rect key="frame" x="16" y="386" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designed and Created by Danny Soloman, James Rogers and Quinn Perini" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-iU-NX5">
+                                <rect key="frame" x="16" y="295" width="343" height="77"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="trailing" secondItem="Zcg-iU-NX5" secondAttribute="trailing" constant="16" id="0SS-mB-j9p"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="trailing" secondItem="bru-YU-HpL" secondAttribute="trailing" constant="16" id="42e-Qb-K5C"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="bottom" secondItem="KOk-nX-9O4" secondAttribute="bottom" constant="40" id="HJE-ac-JbK"/>
+                            <constraint firstItem="Zcg-iU-NX5" firstAttribute="leading" secondItem="bBC-cr-p03" secondAttribute="leading" constant="16" id="Izw-HC-WRg"/>
+                            <constraint firstItem="Zcg-iU-NX5" firstAttribute="top" secondItem="bBC-cr-p03" secondAttribute="top" constant="275" id="PHZ-sh-fpc"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="bottom" secondItem="bru-YU-HpL" secondAttribute="bottom" constant="383" id="Spa-Rx-vnh"/>
+                            <constraint firstItem="KOk-nX-9O4" firstAttribute="leading" secondItem="bBC-cr-p03" secondAttribute="leading" constant="138" id="UTe-qp-oMt"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="trailing" secondItem="qOq-Xp-WHf" secondAttribute="trailing" constant="16" id="WSJ-rY-STN"/>
+                            <constraint firstItem="qOq-Xp-WHf" firstAttribute="leading" secondItem="bBC-cr-p03" secondAttribute="leading" constant="16" id="Wyr-xV-wzF"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="trailing" secondItem="KOk-nX-9O4" secondAttribute="trailing" constant="138" id="XuD-4L-4B7"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="bottom" secondItem="Zcg-iU-NX5" secondAttribute="bottom" constant="295" id="cBx-7R-2GX"/>
+                            <constraint firstItem="bru-YU-HpL" firstAttribute="top" secondItem="bBC-cr-p03" secondAttribute="top" constant="30" id="faO-2o-5j9"/>
+                            <constraint firstItem="qOq-Xp-WHf" firstAttribute="top" secondItem="bBC-cr-p03" secondAttribute="top" constant="366" id="lhu-Ut-iu0"/>
+                            <constraint firstItem="bBC-cr-p03" firstAttribute="bottom" secondItem="qOq-Xp-WHf" secondAttribute="bottom" constant="261" id="nnx-SS-bc5"/>
+                            <constraint firstItem="bru-YU-HpL" firstAttribute="leading" secondItem="bBC-cr-p03" secondAttribute="leading" constant="16" id="o4N-KS-OM8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bBC-cr-p03"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackToSettings" destination="KOk-nX-9O4" id="jUl-Qd-gxs"/>
+                        <segue destination="LcT-Me-XiA" kind="showDetail" identifier="AboutSettingsArrow" id="Or8-qX-9x4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHq-vi-z6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2429.5999999999999" y="26.53673163418291"/>
         </scene>
         <!--Word List View Controller-->
         <scene sceneID="1tE-Y6-vhf">
@@ -809,11 +874,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CS50BOYZ2" width="1944" height="1296"/>
         <image name="circle-xxl" width="192" height="192"/>
         <image name="imessage header.png" width="994" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="OQv-0s-u9b"/>
-        <segue reference="mQc-jD-RW8"/>
+        <segue reference="fzd-in-tVx"/>
+        <segue reference="Or8-qX-9x4"/>
+        <segue reference="FTy-14-59Q"/>
     </inferredMetricsTieBreakers>
 </document>
